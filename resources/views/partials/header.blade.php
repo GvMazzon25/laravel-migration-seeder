@@ -9,6 +9,9 @@
 <body>
     <nav>
         <h1><a href="{{ route('home')}}">Migration Seeder</a></h1>
+        <ul>
+            <li><a href="{{ route('travel')}}">Travel</a></li>
+        </ul>
     </nav>
 </body>
 </html>

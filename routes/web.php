@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')
 ->name('home');
 
+Route::get('/travel', 'TravelController@index')
+->name('travel');
+
 
 
 
