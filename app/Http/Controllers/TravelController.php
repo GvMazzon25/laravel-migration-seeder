@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Travel;
 
 class TravelController extends Controller
 {
     public function index() {
-        return view('travel');
+        $travel = Travel::all();
+
+        return view('travel',$travel);
     }
 }
