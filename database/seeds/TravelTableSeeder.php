@@ -12,6 +12,13 @@ class TravelTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        foreach($travels as $travel){
+            $newTravel = new Travel();
+            $newTravel->city = $travel['city'];
+            $newTravel->location = $travel['location'];
+            $newTravel->duration = $travel['duration'];
+            $newTravel->price = $travel['price'];
+            $newTravel->save();
+        }
     }
 }
